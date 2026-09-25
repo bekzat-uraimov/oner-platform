@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <radialGradient id="glow" cx="0.7" cy="0.44" r="0.62">
+      <stop offset="0" stop-color="#ff3d9a" stop-opacity="0.36"/>
+      <stop offset="0.5" stop-color="#ff3d9a" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#ff3d9a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.5" stop-color="#0a0a0b" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0a0a0b" stop-opacity="0.94"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.14 0 0 0 0"/>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#0a0a0b"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <defs>
+    <linearGradient id="screen" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#ff3d9a" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#7c5cff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0a0a0b" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <g transform="rotate(-11 910 480)" opacity="0.35">
+    <rect x="770" y="220" width="270" height="510" rx="42" fill="#111114" stroke="#ffffff" stroke-opacity="0.35" stroke-width="3"/>
+  </g>
+  <rect x="1090" y="178" width="320" height="590" rx="48" fill="#111114" stroke="#ffffff" stroke-opacity="0.35" stroke-width="3"/>
+  <rect x="1104" y="192" width="292" height="562" rx="36" fill="url(#screen)"/>
+  <rect x="1205.0" y="202" width="90" height="22" rx="11" fill="#0a0a0b"/>
+  <rect x="1118" y="236" width="60" height="6" rx="3" fill="#ffffff" fill-opacity="0.25"/><rect x="1118" y="236" width="60" height="6" rx="3" fill="#b5f23d"/><rect x="1186" y="236" width="60" height="6" rx="3" fill="#ffffff" fill-opacity="0.25"/><rect x="1186" y="236" width="60" height="6" rx="3" fill="#b5f23d"/><rect x="1254" y="236" width="60" height="6" rx="3" fill="#ffffff" fill-opacity="0.25"/><rect x="1254" y="236" width="30" height="6" rx="3" fill="#b5f23d"/><rect x="1322" y="236" width="60" height="6" rx="3" fill="#ffffff" fill-opacity="0.25"/>
+  <circle cx="1250.0" cy="468" r="64" fill="#ffffff" fill-opacity="0.14"/>
+  <polygon points="1230.0,434.0 1230.0,502.0 1286.0,468.0" fill="#b5f23d"/>
+  <path d="M1362 574 c-10 -14 -30 -8 -30 8 c0 14 18 24 30 34 c12 -10 30 -20 30 -34 c0 -16 -20 -22 -30 -8z" fill="#ffffff" fill-opacity="0.9"/>
+  <text x="1362" y="638" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="16" fill="#ffffff" fill-opacity="0.7">24K</text>
+  <circle cx="1362" cy="676" r="16" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="4"/>
+  <rect x="1124" y="678" width="168" height="12" rx="6" fill="#ffffff" fill-opacity="0.6"/>
+  <rect x="1124" y="704" width="116" height="12" rx="6" fill="#ffffff" fill-opacity="0.35"/>
+  <rect x="830" y="560" width="150" height="54" rx="27" fill="#0a0a0b" stroke="#b5f23d" stroke-width="2"/>
+  <text x="905" y="595" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="22" fill="#b5f23d">+1.2K</text>
+  <rect width="1600" height="900" fill="url(#shade)"/>
+  <text x="96.0" y="132.0" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="28" letter-spacing="4" fill="#b5f23d" fill-opacity="1">ONER · 06 — КОНТЕНТ</text>
+  <text x="1504.0" y="132.0" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="26" letter-spacing="4" fill="#ffffff" fill-opacity="0.5">Instagram · CapCut</text>
+  <text x="88" y="806" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="210" font-weight="700" letter-spacing="-9.4" fill="#ffffff">Reels<tspan fill="#b5f23d">.</tspan></text>
+  <rect width="1600" height="900" filter="url(#grain)"/>
+</svg>

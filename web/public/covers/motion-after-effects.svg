@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <radialGradient id="glow" cx="0.7" cy="0.44" r="0.62">
+      <stop offset="0" stop-color="#b5f23d" stop-opacity="0.36"/>
+      <stop offset="0.5" stop-color="#b5f23d" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#b5f23d" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.5" stop-color="#0a0a0b" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0a0a0b" stop-opacity="0.94"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.14 0 0 0 0"/>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#0a0a0b"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <path d="M780 600H1500M780 200V600" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+  <path d="M780 240H1500" stroke="#ffffff" stroke-opacity="0.06" stroke-dasharray="6 10"/><path d="M780 300H1500" stroke="#ffffff" stroke-opacity="0.06" stroke-dasharray="6 10"/><path d="M780 360H1500" stroke="#ffffff" stroke-opacity="0.06" stroke-dasharray="6 10"/><path d="M780 420H1500" stroke="#ffffff" stroke-opacity="0.06" stroke-dasharray="6 10"/><path d="M780 480H1500" stroke="#ffffff" stroke-opacity="0.06" stroke-dasharray="6 10"/><path d="M780 540H1500" stroke="#ffffff" stroke-opacity="0.06" stroke-dasharray="6 10"/>
+  <path d="M800 580 C 980 580, 1010 250, 1180 250 S 1390 560, 1480 230" fill="none" stroke="#b5f23d" stroke-width="6" stroke-linecap="round"/>
+  <path d="M800 580H960M1180 250H1060M1180 250H1300" stroke="#ffffff" stroke-opacity="0.45" stroke-width="2"/>
+  <circle cx="960" cy="580" r="9" fill="#ffffff"/><circle cx="1060" cy="250" r="9" fill="#ffffff"/><circle cx="1300" cy="250" r="9" fill="#ffffff"/>
+  <rect x="784" y="564" width="32" height="32" transform="rotate(45 800 580)" fill="#0a0a0b" stroke="#b5f23d" stroke-width="4"/><rect x="1164" y="234" width="32" height="32" transform="rotate(45 1180 250)" fill="#0a0a0b" stroke="#b5f23d" stroke-width="4"/><rect x="1464" y="214" width="32" height="32" transform="rotate(45 1480 230)" fill="#0a0a0b" stroke="#b5f23d" stroke-width="4"/>
+  <rect width="1600" height="900" fill="url(#shade)"/>
+  <text x="96.0" y="132.0" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="28" letter-spacing="4" fill="#b5f23d" fill-opacity="1">ONER · 07 — МОУШН</text>
+  <text x="1504.0" y="132.0" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="26" letter-spacing="4" fill="#ffffff" fill-opacity="0.5">After Effects</text>
+  <text x="88" y="806" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="210" font-weight="700" letter-spacing="-9.4" fill="#ffffff">Моушн<tspan fill="#b5f23d">.</tspan></text>
+  <rect width="1600" height="900" filter="url(#grain)"/>
+</svg>

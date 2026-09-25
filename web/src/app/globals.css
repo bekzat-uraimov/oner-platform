@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Tokens from oner-motion.html: near monochrome, one blue accent. */
+:root {
+  --bg: #ffffff;
+  --surface: #fafafa;
+  --surface-2: #f4f4f5;
+  --line: #eaeaea;
+  --line-strong: #d4d4d8;
+  --ink: #121212;
+  --ink-2: #3f3f46;
+  --muted: #8a8a93;
+  --accent: #2f4bff;
+  --green: #12a150;
+  --brand: #6ea514;
+  --grid: #dcdce3;
+  --sh-1: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --sh-2: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --sh-3: 0 16px 48px rgba(0, 0, 0, 0.1);
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #0a0a0b;
+  --surface: #121214;
+  --surface-2: #1a1a1d;
+  --line: #242428;
+  --line-strong: #35353c;
+  --ink: #f5f5f6;
+  --ink-2: #c4c4cb;
+  --muted: #79797f;
+  --accent: #6d80ff;
+  --brand: #b5f23d;
+  --grid: #1c1c20;
+  --sh-1: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --sh-2: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --sh-3: 0 16px 48px rgba(0, 0, 0, 0.65);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-green: var(--green);
+  --color-brand: var(--brand);
+  --shadow-soft: var(--sh-1);
+  --shadow-lift: var(--sh-2);
+  --shadow-float: var(--sh-3);
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --radius-card: 14px;
+}
+
+/* In the base layer, so any utility class can override these. */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition:
+      background-color 0.4s var(--ease-soft),
+      color 0.4s var(--ease-soft);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 5px;
+  }
+
+  ::selection {
+    background: var(--ink);
+    color: var(--bg);
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+.wrap {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+/* Accent glow and a fading grid behind a hero. The section needs `isolate`. */
+.hero-glow::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  translate: -50% 0;
+  width: min(900px, 100vw);
+  height: 520px;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--accent) 11%, transparent),
+    transparent 64%
+  );
+}
+
+.hero-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 0%, #000 30%, transparent 75%);
+}
+
+/* Film grain over generated cover art, so flat gradients read as footage. */
+.art-grain {
+  pointer-events: none;
+  opacity: 0.35;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+
+/* The tools row: two copies of the list, slid left by exactly one copy. */
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  to {
+    translate: -50% 0;
+  }
+}
+
+/* The sign-in brand panel is always dark, whatever the theme. */
+.auth-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 20%, transparent 75%);
+}
+
+/* The grid on generated course posters, scaled to the poster (container units). */
+.poster-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 6cqw 6cqw;
+}
+
+/* A slow accent sweep behind the closing call to action. */
+.cta-glow {
+  position: absolute;
+  inset: -60%;
+  z-index: -1;
+  pointer-events: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0 58%,
+    color-mix(in srgb, var(--accent) 16%, transparent) 74%,
+    transparent 90%
+  );
+  animation: cta-spin 16s linear infinite;
+}
+
+@keyframes cta-spin {
+  to {
+    rotate: 360deg;
+  }
+}
+
+/* The course page's fixed buy bar would cover the end of the footer on phones. */
+@media (max-width: 1023px) {
+  body:has(.buy-bar) footer {
+    padding-bottom: 110px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

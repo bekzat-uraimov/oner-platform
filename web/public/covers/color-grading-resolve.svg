@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <radialGradient id="glow" cx="0.7" cy="0.44" r="0.62">
+      <stop offset="0" stop-color="#ff6a3d" stop-opacity="0.36"/>
+      <stop offset="0.5" stop-color="#ff6a3d" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#ff6a3d" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.5" stop-color="#0a0a0b" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0a0a0b" stop-opacity="0.94"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.14 0 0 0 0"/>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#0a0a0b"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <path d="M1000.0 380.0A120 120 0 0 1 998.7 397.7" fill="none" stroke="hsl(0,86%,62%)" stroke-width="16"/>
+  <path d="M998.2 400.8A120 120 0 0 1 993.8 418.1" fill="none" stroke="hsl(10,86%,62%)" stroke-width="16"/>
+  <path d="M992.8 421.0A120 120 0 0 1 985.5 437.3" fill="none" stroke="hsl(20,86%,62%)" stroke-width="16"/>
+  <path d="M983.9 440.0A120 120 0 0 1 973.9 454.7" fill="none" stroke="hsl(30,86%,62%)" stroke-width="16"/>
+  <path d="M971.9 457.1A120 120 0 0 1 959.5 469.9" fill="none" stroke="hsl(40,86%,62%)" stroke-width="16"/>
+  <path d="M957.1 471.9A120 120 0 0 1 942.7 482.3" fill="none" stroke="hsl(50,86%,62%)" stroke-width="16"/>
+  <path d="M940.0 483.9A120 120 0 0 1 924.0 491.7" fill="none" stroke="hsl(60,86%,62%)" stroke-width="16"/>
+  <path d="M921.0 492.8A120 120 0 0 1 903.9 497.6" fill="none" stroke="hsl(70,86%,62%)" stroke-width="16"/>
+  <path d="M900.8 498.2A120 120 0 0 1 883.1 500.0" fill="none" stroke="hsl(80,86%,62%)" stroke-width="16"/>
+  <path d="M880.0 500.0A120 120 0 0 1 862.3 498.7" fill="none" stroke="hsl(90,86%,62%)" stroke-width="16"/>
+  <path d="M859.2 498.2A120 120 0 0 1 841.9 493.8" fill="none" stroke="hsl(100,86%,62%)" stroke-width="16"/>
+  <path d="M839.0 492.8A120 120 0 0 1 822.7 485.5" fill="none" stroke="hsl(110,86%,62%)" stroke-width="16"/>
+  <path d="M820.0 483.9A120 120 0 0 1 805.3 473.9" fill="none" stroke="hsl(120,86%,62%)" stroke-width="16"/>
+  <path d="M802.9 471.9A120 120 0 0 1 790.1 459.5" fill="none" stroke="hsl(130,86%,62%)" stroke-width="16"/>
+  <path d="M788.1 457.1A120 120 0 0 1 777.7 442.7" fill="none" stroke="hsl(140,86%,62%)" stroke-width="16"/>
+  <path d="M776.1 440.0A120 120 0 0 1 768.3 424.0" fill="none" stroke="hsl(150,86%,62%)" stroke-width="16"/>
+  <path d="M767.2 421.0A120 120 0 0 1 762.4 403.9" fill="none" stroke="hsl(160,86%,62%)" stroke-width="16"/>
+  <path d="M761.8 400.8A120 120 0 0 1 760.0 383.1" fill="none" stroke="hsl(170,86%,62%)" stroke-width="16"/>
+  <path d="M760.0 380.0A120 120 0 0 1 761.3 362.3" fill="none" stroke="hsl(180,86%,62%)" stroke-width="16"/>
+  <path d="M761.8 359.2A120 120 0 0 1 766.2 341.9" fill="none" stroke="hsl(190,86%,62%)" stroke-width="16"/>
+  <path d="M767.2 339.0A120 120 0 0 1 774.5 322.7" fill="none" stroke="hsl(200,86%,62%)" stroke-width="16"/>
+  <path d="M776.1 320.0A120 120 0 0 1 786.1 305.3" fill="none" stroke="hsl(210,86%,62%)" stroke-width="16"/>
+  <path d="M788.1 302.9A120 120 0 0 1 800.5 290.1" fill="none" stroke="hsl(220,86%,62%)" stroke-width="16"/>
+  <path d="M802.9 288.1A120 120 0 0 1 817.3 277.7" fill="none" stroke="hsl(230,86%,62%)" stroke-width="16"/>
+  <path d="M820.0 276.1A120 120 0 0 1 836.0 268.3" fill="none" stroke="hsl(240,86%,62%)" stroke-width="16"/>
+  <path d="M839.0 267.2A120 120 0 0 1 856.1 262.4" fill="none" stroke="hsl(250,86%,62%)" stroke-width="16"/>
+  <path d="M859.2 261.8A120 120 0 0 1 876.9 260.0" fill="none" stroke="hsl(260,86%,62%)" stroke-width="16"/>
+  <path d="M880.0 260.0A120 120 0 0 1 897.7 261.3" fill="none" stroke="hsl(270,86%,62%)" stroke-width="16"/>
+  <path d="M900.8 261.8A120 120 0 0 1 918.1 266.2" fill="none" stroke="hsl(280,86%,62%)" stroke-width="16"/>
+  <path d="M921.0 267.2A120 120 0 0 1 937.3 274.5" fill="none" stroke="hsl(290,86%,62%)" stroke-width="16"/>
+  <path d="M940.0 276.1A120 120 0 0 1 954.7 286.1" fill="none" stroke="hsl(300,86%,62%)" stroke-width="16"/>
+  <path d="M957.1 288.1A120 120 0 0 1 969.9 300.5" fill="none" stroke="hsl(310,86%,62%)" stroke-width="16"/>
+  <path d="M971.9 302.9A120 120 0 0 1 982.3 317.3" fill="none" stroke="hsl(320,86%,62%)" stroke-width="16"/>
+  <path d="M983.9 320.0A120 120 0 0 1 991.7 336.0" fill="none" stroke="hsl(330,86%,62%)" stroke-width="16"/>
+  <path d="M992.8 339.0A120 120 0 0 1 997.6 356.1" fill="none" stroke="hsl(340,86%,62%)" stroke-width="16"/>
+  <path d="M998.2 359.2A120 120 0 0 1 1000.0 376.9" fill="none" stroke="hsl(350,86%,62%)" stroke-width="16"/>
+  <circle cx="880" cy="380" r="96" fill="#0f0f12" stroke="#ffffff" stroke-opacity="0.08"/>
+  <path d="M800 380H960M880 300V460" stroke="#ffffff" stroke-opacity="0.12"/>
+  <line x1="880" y1="380" x2="854" y2="398" stroke="#b5f23d" stroke-opacity="0.5" stroke-width="2"/>
+  <circle cx="854" cy="398" r="12" fill="#0a0a0b" stroke="#b5f23d" stroke-width="4"/>
+  <text x="880.0" y="558.0" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="22" letter-spacing="4" fill="#ffffff" fill-opacity="0.45">LIFT</text>
+  <path d="M1270.0 380.0A120 120 0 0 1 1268.7 397.7" fill="none" stroke="hsl(0,86%,62%)" stroke-width="16"/>
+  <path d="M1268.2 400.8A120 120 0 0 1 1263.8 418.1" fill="none" stroke="hsl(10,86%,62%)" stroke-width="16"/>
+  <path d="M1262.8 421.0A120 120 0 0 1 1255.5 437.3" fill="none" stroke="hsl(20,86%,62%)" stroke-width="16"/>
+  <path d="M1253.9 440.0A120 120 0 0 1 1243.9 454.7" fill="none" stroke="hsl(30,86%,62%)" stroke-width="16"/>
+  <path d="M1241.9 457.1A120 120 0 0 1 1229.5 469.9" fill="none" stroke="hsl(40,86%,62%)" stroke-width="16"/>
+  <path d="M1227.1 471.9A120 120 0 0 1 1212.7 482.3" fill="none" stroke="hsl(50,86%,62%)" stroke-width="16"/>
+  <path d="M1210.0 483.9A120 120 0 0 1 1194.0 491.7" fill="none" stroke="hsl(60,86%,62%)" stroke-width="16"/>
+  <path d="M1191.0 492.8A120 120 0 0 1 1173.9 497.6" fill="none" stroke="hsl(70,86%,62%)" stroke-width="16"/>
+  <path d="M1170.8 498.2A120 120 0 0 1 1153.1 500.0" fill="none" stroke="hsl(80,86%,62%)" stroke-width="16"/>
+  <path d="M1150.0 500.0A120 120 0 0 1 1132.3 498.7" fill="none" stroke="hsl(90,86%,62%)" stroke-width="16"/>
+  <path d="M1129.2 498.2A120 120 0 0 1 1111.9 493.8" fill="none" stroke="hsl(100,86%,62%)" stroke-width="16"/>
+  <path d="M1109.0 492.8A120 120 0 0 1 1092.7 485.5" fill="none" stroke="hsl(110,86%,62%)" stroke-width="16"/>
+  <path d="M1090.0 483.9A120 120 0 0 1 1075.3 473.9" fill="none" stroke="hsl(120,86%,62%)" stroke-width="16"/>
+  <path d="M1072.9 471.9A120 120 0 0 1 1060.1 459.5" fill="none" stroke="hsl(130,86%,62%)" stroke-width="16"/>
+  <path d="M1058.1 457.1A120 120 0 0 1 1047.7 442.7" fill="none" stroke="hsl(140,86%,62%)" stroke-width="16"/>
+  <path d="M1046.1 440.0A120 120 0 0 1 1038.3 424.0" fill="none" stroke="hsl(150,86%,62%)" stroke-width="16"/>
+  <path d="M1037.2 421.0A120 120 0 0 1 1032.4 403.9" fill="none" stroke="hsl(160,86%,62%)" stroke-width="16"/>
+  <path d="M1031.8 400.8A120 120 0 0 1 1030.0 383.1" fill="none" stroke="hsl(170,86%,62%)" stroke-width="16"/>
+  <path d="M1030.0 380.0A120 120 0 0 1 1031.3 362.3" fill="none" stroke="hsl(180,86%,62%)" stroke-width="16"/>
+  <path d="M1031.8 359.2A120 120 0 0 1 1036.2 341.9" fill="none" stroke="hsl(190,86%,62%)" stroke-width="16"/>
+  <path d="M1037.2 339.0A120 120 0 0 1 1044.5 322.7" fill="none" stroke="hsl(200,86%,62%)" stroke-width="16"/>
+  <path d="M1046.1 320.0A120 120 0 0 1 1056.1 305.3" fill="none" stroke="hsl(210,86%,62%)" stroke-width="16"/>
+  <path d="M1058.1 302.9A120 120 0 0 1 1070.5 290.1" fill="none" stroke="hsl(220,86%,62%)" stroke-width="16"/>
+  <path d="M1072.9 288.1A120 120 0 0 1 1087.3 277.7" fill="none" stroke="hsl(230,86%,62%)" stroke-width="16"/>
+  <path d="M1090.0 276.1A120 120 0 0 1 1106.0 268.3" fill="none" stroke="hsl(240,86%,62%)" stroke-width="16"/>
+  <path d="M1109.0 267.2A120 120 0 0 1 1126.1 262.4" fill="none" stroke="hsl(250,86%,62%)" stroke-width="16"/>
+  <path d="M1129.2 261.8A120 120 0 0 1 1146.9 260.0" fill="none" stroke="hsl(260,86%,62%)" stroke-width="16"/>
+  <path d="M1150.0 260.0A120 120 0 0 1 1167.7 261.3" fill="none" stroke="hsl(270,86%,62%)" stroke-width="16"/>
+  <path d="M1170.8 261.8A120 120 0 0 1 1188.1 266.2" fill="none" stroke="hsl(280,86%,62%)" stroke-width="16"/>
+  <path d="M1191.0 267.2A120 120 0 0 1 1207.3 274.5" fill="none" stroke="hsl(290,86%,62%)" stroke-width="16"/>
+  <path d="M1210.0 276.1A120 120 0 0 1 1224.7 286.1" fill="none" stroke="hsl(300,86%,62%)" stroke-width="16"/>
+  <path d="M1227.1 288.1A120 120 0 0 1 1239.9 300.5" fill="none" stroke="hsl(310,86%,62%)" stroke-width="16"/>
+  <path d="M1241.9 302.9A120 120 0 0 1 1252.3 317.3" fill="none" stroke="hsl(320,86%,62%)" stroke-width="16"/>
+  <path d="M1253.9 320.0A120 120 0 0 1 1261.7 336.0" fill="none" stroke="hsl(330,86%,62%)" stroke-width="16"/>
+  <path d="M1262.8 339.0A120 120 0 0 1 1267.6 356.1" fill="none" stroke="hsl(340,86%,62%)" stroke-width="16"/>
+  <path d="M1268.2 359.2A120 120 0 0 1 1270.0 376.9" fill="none" stroke="hsl(350,86%,62%)" stroke-width="16"/>
+  <circle cx="1150" cy="380" r="96" fill="#0f0f12" stroke="#ffffff" stroke-opacity="0.08"/>
+  <path d="M1070 380H1230M1150 300V460" stroke="#ffffff" stroke-opacity="0.12"/>
+  <line x1="1150" y1="380" x2="1160" y2="346" stroke="#b5f23d" stroke-opacity="0.5" stroke-width="2"/>
+  <circle cx="1160" cy="346" r="12" fill="#0a0a0b" stroke="#b5f23d" stroke-width="4"/>
+  <text x="1150.0" y="558.0" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="22" letter-spacing="4" fill="#ffffff" fill-opacity="0.45">GAMMA</text>
+  <path d="M1540.0 380.0A120 120 0 0 1 1538.7 397.7" fill="none" stroke="hsl(0,86%,62%)" stroke-width="16"/>
+  <path d="M1538.2 400.8A120 120 0 0 1 1533.8 418.1" fill="none" stroke="hsl(10,86%,62%)" stroke-width="16"/>
+  <path d="M1532.8 421.0A120 120 0 0 1 1525.5 437.3" fill="none" stroke="hsl(20,86%,62%)" stroke-width="16"/>
+  <path d="M1523.9 440.0A120 120 0 0 1 1513.9 454.7" fill="none" stroke="hsl(30,86%,62%)" stroke-width="16"/>
+  <path d="M1511.9 457.1A120 120 0 0 1 1499.5 469.9" fill="none" stroke="hsl(40,86%,62%)" stroke-width="16"/>
+  <path d="M1497.1 471.9A120 120 0 0 1 1482.7 482.3" fill="none" stroke="hsl(50,86%,62%)" stroke-width="16"/>
+  <path d="M1480.0 483.9A120 120 0 0 1 1464.0 491.7" fill="none" stroke="hsl(60,86%,62%)" stroke-width="16"/>
+  <path d="M1461.0 492.8A120 120 0 0 1 1443.9 497.6" fill="none" stroke="hsl(70,86%,62%)" stroke-width="16"/>
+  <path d="M1440.8 498.2A120 120 0 0 1 1423.1 500.0" fill="none" stroke="hsl(80,86%,62%)" stroke-width="16"/>
+  <path d="M1420.0 500.0A120 120 0 0 1 1402.3 498.7" fill="none" stroke="hsl(90,86%,62%)" stroke-width="16"/>
+  <path d="M1399.2 498.2A120 120 0 0 1 1381.9 493.8" fill="none" stroke="hsl(100,86%,62%)" stroke-width="16"/>
+  <path d="M1379.0 492.8A120 120 0 0 1 1362.7 485.5" fill="none" stroke="hsl(110,86%,62%)" stroke-width="16"/>
+  <path d="M1360.0 483.9A120 120 0 0 1 1345.3 473.9" fill="none" stroke="hsl(120,86%,62%)" stroke-width="16"/>
+  <path d="M1342.9 471.9A120 120 0 0 1 1330.1 459.5" fill="none" stroke="hsl(130,86%,62%)" stroke-width="16"/>
+  <path d="M1328.1 457.1A120 120 0 0 1 1317.7 442.7" fill="none" stroke="hsl(140,86%,62%)" stroke-width="16"/>
+  <path d="M1316.1 440.0A120 120 0 0 1 1308.3 424.0" fill="none" stroke="hsl(150,86%,62%)" stroke-width="16"/>
+  <path d="M1307.2 421.0A120 120 0 0 1 1302.4 403.9" fill="none" stroke="hsl(160,86%,62%)" stroke-width="16"/>
+  <path d="M1301.8 400.8A120 120 0 0 1 1300.0 383.1" fill="none" stroke="hsl(170,86%,62%)" stroke-width="16"/>
+  <path d="M1300.0 380.0A120 120 0 0 1 1301.3 362.3" fill="none" stroke="hsl(180,86%,62%)" stroke-width="16"/>
+  <path d="M1301.8 359.2A120 120 0 0 1 1306.2 341.9" fill="none" stroke="hsl(190,86%,62%)" stroke-width="16"/>
+  <path d="M1307.2 339.0A120 120 0 0 1 1314.5 322.7" fill="none" stroke="hsl(200,86%,62%)" stroke-width="16"/>
+  <path d="M1316.1 320.0A120 120 0 0 1 1326.1 305.3" fill="none" stroke="hsl(210,86%,62%)" stroke-width="16"/>
+  <path d="M1328.1 302.9A120 120 0 0 1 1340.5 290.1" fill="none" stroke="hsl(220,86%,62%)" stroke-width="16"/>
+  <path d="M1342.9 288.1A120 120 0 0 1 1357.3 277.7" fill="none" stroke="hsl(230,86%,62%)" stroke-width="16"/>
+  <path d="M1360.0 276.1A120 120 0 0 1 1376.0 268.3" fill="none" stroke="hsl(240,86%,62%)" stroke-width="16"/>
+  <path d="M1379.0 267.2A120 120 0 0 1 1396.1 262.4" fill="none" stroke="hsl(250,86%,62%)" stroke-width="16"/>
+  <path d="M1399.2 261.8A120 120 0 0 1 1416.9 260.0" fill="none" stroke="hsl(260,86%,62%)" stroke-width="16"/>
+  <path d="M1420.0 260.0A120 120 0 0 1 1437.7 261.3" fill="none" stroke="hsl(270,86%,62%)" stroke-width="16"/>
+  <path d="M1440.8 261.8A120 120 0 0 1 1458.1 266.2" fill="none" stroke="hsl(280,86%,62%)" stroke-width="16"/>
+  <path d="M1461.0 267.2A120 120 0 0 1 1477.3 274.5" fill="none" stroke="hsl(290,86%,62%)" stroke-width="16"/>
+  <path d="M1480.0 276.1A120 120 0 0 1 1494.7 286.1" fill="none" stroke="hsl(300,86%,62%)" stroke-width="16"/>
+  <path d="M1497.1 288.1A120 120 0 0 1 1509.9 300.5" fill="none" stroke="hsl(310,86%,62%)" stroke-width="16"/>
+  <path d="M1511.9 302.9A120 120 0 0 1 1522.3 317.3" fill="none" stroke="hsl(320,86%,62%)" stroke-width="16"/>
+  <path d="M1523.9 320.0A120 120 0 0 1 1531.7 336.0" fill="none" stroke="hsl(330,86%,62%)" stroke-width="16"/>
+  <path d="M1532.8 339.0A120 120 0 0 1 1537.6 356.1" fill="none" stroke="hsl(340,86%,62%)" stroke-width="16"/>
+  <path d="M1538.2 359.2A120 120 0 0 1 1540.0 376.9" fill="none" stroke="hsl(350,86%,62%)" stroke-width="16"/>
+  <circle cx="1420" cy="380" r="96" fill="#0f0f12" stroke="#ffffff" stroke-opacity="0.08"/>
+  <path d="M1340 380H1500M1420 300V460" stroke="#ffffff" stroke-opacity="0.12"/>
+  <line x1="1420" y1="380" x2="1450" y2="392" stroke="#b5f23d" stroke-opacity="0.5" stroke-width="2"/>
+  <circle cx="1450" cy="392" r="12" fill="#0a0a0b" stroke="#b5f23d" stroke-width="4"/>
+  <text x="1420.0" y="558.0" text-anchor="middle" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="22" letter-spacing="4" fill="#ffffff" fill-opacity="0.45">GAIN</text>
+  <rect width="1600" height="900" fill="url(#shade)"/>
+  <text x="96.0" y="132.0" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="28" letter-spacing="4" fill="#b5f23d" fill-opacity="1">ONER · 01 — ЦВЕТ</text>
+  <text x="1504.0" y="132.0" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="26" letter-spacing="4" fill="#ffffff" fill-opacity="0.5">DaVinci Resolve</text>
+  <text x="88" y="806" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="210" font-weight="700" letter-spacing="-9.4" fill="#ffffff">Цвет<tspan fill="#b5f23d">.</tspan></text>
+  <rect width="1600" height="900" filter="url(#grain)"/>
+</svg>

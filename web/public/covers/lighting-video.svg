@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <radialGradient id="glow" cx="0.7" cy="0.44" r="0.62">
+      <stop offset="0" stop-color="#ffc83d" stop-opacity="0.36"/>
+      <stop offset="0.5" stop-color="#ffc83d" stop-opacity="0.09"/>
+      <stop offset="1" stop-color="#ffc83d" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="shade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.5" stop-color="#0a0a0b" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0a0a0b" stop-opacity="0.94"/>
+    </linearGradient>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0.14 0 0 0 0"/>
+    </filter>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#0a0a0b"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+  <defs>
+    <linearGradient id="beam" x1="0.9" y1="0.1" x2="0.2" y2="0.9">
+      <stop offset="0" stop-color="#fff6d6" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#fff6d6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <polygon points="1250.0,400.0 1410.0,440.0 1170.0,770.0 860.0,660.0" fill="url(#beam)"/>
+  <g transform="rotate(24 1320 336)">
+    <rect x="1180" y="246" width="280" height="180" rx="16" fill="#ffc83d" fill-opacity="0.55" filter="url(#soft)"/>
+    <rect x="1180" y="246" width="280" height="180" rx="16" fill="#fffaf0"/>
+    <rect x="1192" y="258" width="256" height="156" rx="10" fill="none" stroke="#e8dcc0" stroke-width="3"/>
+  </g>
+  <text x="1496.0" y="520.0" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="20" letter-spacing="4" fill="#ffffff" fill-opacity="0.45">KEY</text>
+  <circle cx="760" cy="320" r="60" fill="#ffffff" fill-opacity="0.2" filter="url(#soft)"/>
+  <circle cx="760" cy="320" r="30" fill="#ffffff" fill-opacity="0.55"/>
+  <text x="730.0" y="392.0" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="20" letter-spacing="4" fill="#ffffff" fill-opacity="0.45">FILL</text>
+  <circle cx="1040" cy="500" r="78" fill="#17171b"/>
+  <path d="M870 760 Q1040 580 1210 760 Z" fill="#17171b"/>
+  <path d="M1086 430 A78 78 0 0 1 1100 560" fill="none" stroke="#b5f23d" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1150 660 Q1185 700 1206 756" fill="none" stroke="#b5f23d" stroke-width="6" stroke-linecap="round"/>
+  <text x="1130.0" y="620.0" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="20" letter-spacing="4" fill="#b5f23d" fill-opacity="1">RIM</text>
+  <rect width="1600" height="900" fill="url(#shade)"/>
+  <text x="96.0" y="132.0" text-anchor="start" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="28" letter-spacing="4" fill="#b5f23d" fill-opacity="1">ONER · 04 — СВЕТ</text>
+  <text x="1504.0" y="132.0" text-anchor="end" font-family="'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="26" letter-spacing="4" fill="#ffffff" fill-opacity="0.5">Трёхточечная схема</text>
+  <text x="88" y="806" font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="210" font-weight="700" letter-spacing="-9.4" fill="#ffffff">Свет<tspan fill="#b5f23d">.</tspan></text>
+  <rect width="1600" height="900" filter="url(#grain)"/>
+</svg>
