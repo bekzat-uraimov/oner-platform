@@ -3,6 +3,10 @@
 Backend for ONER, an online filmmaking course platform for Russian speaking Central Asia (Kyrgyzstan, Kazakhstan, Uzbekistan).
 I built the backend with FastAPI, PostgreSQL, SQLModel and Alembic. The Next.js frontend is in `web/`.
 
+<p align="center">
+  <img src="docs/oner-architecture.svg" width="100%" alt="Animated ONER architecture: checkout, signed FreedomPay webhook, entitlement granted once, DRM video for owners only">
+</p>
+
 > This public repo starts from a snapshot of the code. The day by day development history is in a private repo.
 
 The whole product is one rule: **you watch a lesson only if you own it.**
